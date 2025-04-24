@@ -7,16 +7,27 @@
   </head>
   <body>
     <div class="main-container">
-      <div class="search-bar">
-        <form>
-          <label for="location-search">Enter A City</label>
-          <input type="text" id="location-search" name="location-search" />
-          <button class="search-btn">Search</button>
-        </form>
-      </div>
+      <header class="header">
+          <div class="search-bar">
+            <form>
+              <label for="location-search">Enter A City</label>
+              <input type="text" id="location-search" name="location-search" />
+              <button class="search-btn">Search</button>
+            </form>
+          </div>
+          <div class="location"></div>
+      </header>
       <div class="left-section">
-        <div class="weather-info">24 degrees, cloudy</div>
-        <div class="upcoming">This week</div>
+        <div class="weather-info">
+            <div class="section-heading">Today</div>
+            <section class="weather-info-content"></section>
+        </div>
+        <div class="upcoming">
+            <div class="section-heading">This week</div>
+            <section class="upcoming-content">
+                <!-- <img src="../images/WeatherIcons/PNG/1st Set - Color/rain.png"> -->
+            </section>
+        </div>
       </div>
       <div class="hourly">Today:</div>
     </div>

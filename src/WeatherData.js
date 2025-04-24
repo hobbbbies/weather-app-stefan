@@ -1,21 +1,25 @@
 export default class WeatherData {
-  #conditions;
+  #icon;
   #temperature;
   #feelsLike;
   #precipitation;
   #windSpeed;
+  #datetime;
+  #resolvedAddress
 
-  constructor(conditions, temp, feelsLike, precip, windspeed) {
-    this.#conditions = conditions;
+  constructor(icon, temp, feelsLike, precip, windspeed, datetime, resolvedAddress) {
+    this.#icon = icon;
     this.#temperature = temp;
     this.#feelsLike = feelsLike;
     this.#precipitation = precip;
     this.#windSpeed = windspeed;
+    this.#datetime = datetime;
+    this.#resolvedAddress = resolvedAddress;
   }
 
   // Getters to access private fields
-  get conditions() {
-    return this.#conditions;
+  get icon() {
+    return this.#icon;
   }
   get temperature() {
     return this.#temperature;
@@ -28,5 +32,13 @@ export default class WeatherData {
   }
   get windSpeed() {
     return this.#windSpeed;
+  }
+
+  get datetime() {
+    return this.#datetime;
+  }
+
+  get resolvedAddress() {
+    return this.#resolvedAddress;
   }
 }
