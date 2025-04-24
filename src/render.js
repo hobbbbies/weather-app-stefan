@@ -5,7 +5,6 @@ export default function (data, parentDivClass) {
 
   for (let i = 0; i < data.length; i += 1) {
     const weatherProperties = [
-      { property: "conditions", label: "Weather", suffix: "" },
       { property: "temperature", label: "Temperature", suffix: "°C" },
       { property: "feelsLike", label: "Feels Like", suffix: "°C" },
       { property: "precipitation", label: "precipitation", suffix: "%" },
